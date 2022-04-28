@@ -1534,7 +1534,7 @@ function RGBToHtmlColor(rgb) {
 }
 function rplaceHexToRGB(hexColor) {
     return {
-        alpha: (hexColor >> 24) & 0xff,
+        alpha: (hexColor >> 16) & 0xff,
         b: (hexColor >> 16) & 0xff,
         g: (hexColor >> 16) & 0xff,
         r: (hexColor >> 16) & 0xff,
@@ -1547,7 +1547,7 @@ function showDialog(text) {
     dialog.style.left = "10px";
     dialog.style.width = "200px";
     dialog.style.background = "rgba(0,0,0,0.8)";
-    dialog.style.color = "white";
+    dialog.style.color = "black";
     dialog.style.fontSize = "14px";
     dialog.style.textAlign = "center";
     dialog.style.padding = "10px";
