@@ -1530,7 +1530,7 @@ function doSingle() {
     }
 }
 function RGBToHtmlColor(rgb) {
-    return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${rgb.alpha / 255})`;
+    return `rgba(${rgb.b}, ${rgb.b}, ${rgb.b}, ${rgb.b / 255})`;
 }
 function rplaceHexToRGB(hexColor) {
     return {
